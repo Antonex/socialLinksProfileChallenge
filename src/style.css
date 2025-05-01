@@ -1,0 +1,166 @@
+/* Required Variables */
+:root {
+    --background-color: hsl(0, 0%, 8%);
+    --text-color: hsl(0, 0%, 100%);
+    --green-hover-color: hsl(75, 94%, 57%);
+    --card-color: hsl(0, 0%, 12%);
+    --link-color: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: 'Inter', Courier, monospace;
+    src: url('/assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', Courier, monospace;
+    background-color: var(--card-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+.container {
+    width: 400px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .card {
+    background-color: var(--link-color);
+    display: grid;
+    place-items: center;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+}
+
+.container .card .profile {
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    margin: 1rem;
+}
+
+.container .card .name {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    font-family: 'Inter', Courier, monospace;
+}
+
+.container .card .address {
+    color: var(--green-hover-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin: 0.5rem 0;
+    font-family: 'Inter', Courier, monospace;
+}
+
+.container .card .job_desc {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'Inter', Courier, monospace;
+}
+
+.container .card .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.container .card .socials .social-platform {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    background-color: var(--card-color);
+    width: 100%;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    font-family: 'Inter', Courier, monospace;
+}
+
+.container .card .socials .social-platform:hover {
+    background-color: var(--green-hover-color);
+    color: var(--link-color);
+    transition: 0.3s;
+}
+
+.attribution {
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: 'Inter', Courier, monospace;
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+.attribution a {
+    color: var(--green-hover-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .container .card {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .container .card .profile {
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .container .card .name {
+        font-size: 1.2rem;
+    }
+
+    .container .card .address {
+        font-size: 0.9rem;
+    }
+
+    .container .card .job_desc {
+        font-size: 0.8rem;
+    }
+
+    .container .card .socials .social-platform {
+        font-size: 0.9rem;
+        padding: 0.8rem 0.5rem;
+    }
+
+    .attribution {
+        color: var(--text-color);
+        font-weight: 400;
+        font-family: 'Inter', Courier, monospace;
+        margin: 2rem 0;
+        font-size: 0.7rem;
+    }
+    
+
+}
